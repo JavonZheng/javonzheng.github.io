@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>首页</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="./css/style.css"/>
+		<script src="./js/index.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="header_top">
+				<a class="indexLogo" href="#"><img src="./img/indexLogo.png"></a>
+				<ul class="headList">
+					<li><a href="#">商城资讯</a></li>
+					<li><a href="#">登陆</a></li>
+					<li><a href="#">购物车<p class="shopCount"></p></a></li>
+				</ul>
+				<div class="search"><img src="./img/search.png"></div>
+				<ul class="nav">
+					<li><a href="#">首页</a></li>
+					<li><a href="#">关于我们</a></li>
+					<li><a href="#">滑板新闻</a></li>
+					<li><a href="#">沸点商品</a></li>
+					<li><a href="#">沸点品牌</a></li>
+					<li><a href="#">联系沸点</a></li>
+					<li><a href="#">经销商</a></li>
+				</ul>
+			</div>
+
+			<div class="blackHr"></div>
+		</header>
+		
+		<section>
+		<div style="height:100px;width:100%;background-color:green;"></div>
+		</section>
+		<footer>
+			<ul class="footer_top">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<div class="footer_bottom">
+				<div>
+					<span>
+						Copyright2016&copy;2016深圳市沸点运动器材有限公司 粤ICP备10029664号-9 
+					</span>
+					<ul>
+						<li><a href="#">滑板新闻</a></li>
+						<li><a href="#">沸点商品</a></li>
+						<li><a href="#">沸点品牌</a></li>
+						<li><a href="#">联系沸点</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
