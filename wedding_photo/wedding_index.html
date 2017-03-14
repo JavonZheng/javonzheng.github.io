@@ -1,0 +1,716 @@
+<!doctype html>
+<html>
+    
+    <head>
+        <link href="com.css" rel="stylesheet">
+        <link href="style01.css" rel="stylesheet">
+        <script src="jquery.js"></script>
+        <meta charset="utf-8">
+        <title>不凡诗意  首页</title>
+    </head>
+    
+    <body>
+        <div class="header">
+            <a href="#" class="logo">
+                <img src="PS/img/logo01.png">
+            </a>
+            <div class="content">
+                <div class="nav">
+                    <ul>
+                        <a href="wedding_index.html" target="new">
+                            <li>首页</li>
+                        </a>
+                        <a href="#">
+                            <li>品牌介绍</li>
+                        </a>
+                        <a href="wedding_product.html" target="new">
+                            <li>案例展示</li>
+                        </a>
+                        <a href="#">
+                            <li>新闻资讯</li>
+                        </a>
+                        <a href="#">
+                            <li> 热门外景</li>
+                        </a>
+                        <a href="#">
+                            <li>团队展示</li>
+                        </a>
+                        <a href="#">
+                            <li>合作流程</li>
+                        </a>
+                        <a href="#">
+                            <li>联系我们</li>
+                        </a>
+                    </ul>
+                    <div class="clearfix">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner_box">
+            <a href="#">
+                <img src="PS/img/banner02.png">
+            </a>
+            <a href="#">
+                <img src="PS/img/banner04.png">
+            </a>
+            <a href="#">
+                <img src="PS/img/banner05.png">
+            </a>
+            <ul class="btns">
+                <li class="current"></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <script>
+            $(".banner_box a").hide().eq(0).show();
+
+            $(".btns li:eq(0)").click(function() {
+                x = 0;
+
+                $(".btns li").removeClass("current").eq(0).addClass("current") $(".banner_box a").hide().eq(0).show();
+            }); 
+			$(".btns li:eq(1)").click(function() {
+                x = 1
+
+                $(".btns li").removeClass("current").eq(1).addClass("current") $(".banner_box a").hide().eq(1).show()
+            }); 
+			$(".btns li:eq(2)").click(function() {
+                x = 2 document.title = x $(".btns li").removeClass("current").eq(2).addClass("current") $(".banner_box a").hide().eq(2).show()
+            });
+
+            var x = 0;
+            function run() {
+                if (x < 2) {
+                    x = x + 1;
+                } else {
+                    x = 0;
+                };
+
+                $(".banner_box a").hide().eq(x).show();
+				$(".btns li").removeClass("current").eq(x).addClass("current");
+            }
+            var t_ad = setInterval(run, 3000);
+
+            $(".banner_box").mouseenter(function() {
+                clearInterval(t_ad);
+            }).mouseleave(function() {
+                t_ad = setInterval(run, 3000);
+            });
+        </script>
+        <div class="hot_box">
+            <img src="PS/img/bt01.png">
+            <div class="photo_box">
+                <div class="photo">
+                    <img src="PS/img/hd01.png">
+                    <div class="red_box">
+                        <img src="PS/img/red.png">
+                        <div class="red">
+                            <a href="#">
+                                <img src="PS/img/tb01.png">
+                            </a>
+                            <div class="text">
+                                <h1>
+                                    因特拉肯
+                                </h1>
+                                <h2>
+                                    瑞士小镇
+                                </h2>
+                                <h3>
+                                    ￥28888
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="photo">
+                    <img src="PS/img/hd02.png">
+                    <div class="red_box">
+                        <img src="PS/img/red.png">
+                        <div class="red">
+                            <a href="#">
+                                <img src="PS/img/tb01.png">
+                            </a>
+                            <div class="text">
+                                <h1>
+                                    因特拉肯
+                                </h1>
+                                <h2>
+                                    瑞士小镇
+                                </h2>
+                                <h3>
+                                    ￥28888
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="photo">
+                    <img src="PS/img/hd03.png">
+                    <div class="red_box">
+                        <img src="PS/img/red.png">
+                        <div class="red">
+                            <a href="#">
+                                <img src="PS/img/tb01.png">
+                            </a>
+                            <div class="text">
+                                <h1>
+                                    因特拉肯
+                                </h1>
+                                <h2>
+                                    瑞士小镇
+                                </h2>
+                                <h3>
+                                    ￥28888
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="photo">
+                    <img src="PS/img/hd04.png">
+                    <div class="red_box">
+                        <img src="PS/img/red.png">
+                        <div class="red">
+                            <a href="#">
+                                <img src="PS/img/tb01.png">
+                            </a>
+                            <div class="text">
+                                <h1>
+                                    因特拉肯
+                                </h1>
+                                <h2>
+                                    瑞士小镇
+                                </h2>
+                                <h3>
+                                    ￥28888
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix">
+            </div>
+            <a href="#" class="btn01">
+                <img src="PS/img/ckt05.png">
+                <img src="PS/img/ckt06.png">
+            </a>
+        </div>
+        <script>
+            $(".btn01 img:eq(1)").hide();
+			$(".btn01").mouseenter(function() {
+                $(".btn01 img:eq(1)").show();
+
+            }).mouseleave(function() {
+                $(".btn01 img:eq(1)").hide();
+            })
+        </script>
+        <div class="product">
+            <img src="PS/img/bt02.png">
+            <div class="m_product">
+                <div class="s_product">
+                    <div class="p_product">
+                        <a href="#">
+                            <img src="PS/img/mt01.png">
+                        </a>
+                    </div>
+                    <div class="p_product">
+                        <a href="#">
+                            <img src="PS/img/mt02.png">
+                        </a>
+                    </div>
+                    <div class="p_product">
+                        <a href="#">
+                            <img src="PS/img/mt03.png">
+                        </a>
+                    </div>
+                    <div class="p_product">
+                        <a href="#">
+                            <img src="PS/img/mt04.png">
+                        </a>
+                    </div>
+                    <div class="p_product">
+                        <a href="#">
+                            <img src="PS/img/mt05.png">
+                        </a>
+                    </div>
+                    <div class="p_product">
+                        <a href="#">
+                            <img src="PS/img/mt06.png">
+                        </a>
+                    </div>
+                    <div class="p_product">
+                        <a href="#">
+                            <img src="PS/img/mt07.png">
+                        </a>
+                    </div>
+                    <div class="p_product">
+                        <a href="#">
+                            <img src="PS/img/mt08.png">
+                        </a>
+                    </div>
+                    <div class="p_product">
+                        <a href="#">
+                            <img src="PS/img/mt09.png">
+                        </a>
+                    </div>
+                    <div class="clearfix">
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn02">
+                <img src="PS/img/ckt05.png">
+                <img src="PS/img/ckt06.png">
+            </a>
+        </div>
+        <script>
+            $(".btn02 img:eq(1)").hide();
+			$(".btn02").mouseenter(function() {
+                $(".btn02 img:eq(1)").show();
+
+            }).mouseleave(function() {
+                $(".btn02 img:eq(1)").hide();
+
+            })
+        </script>
+        <div class="l_title">
+            <img src="PS/img/bt03.png">
+        </div>
+        <div class="popular">
+            <a href="#">
+                <img src="PS/img/banner06.png">
+            </a>
+            <a href="#">
+                <img src="PS/img/banner03.png">
+            </a>
+            <a href="#">
+                <img src="PS/img/banner07.png">
+            </a>
+            <a href="#">
+                <img src="PS/img/banner08.png">
+            </a>
+            <a href="#">
+                <img src="PS/img/banner09.png">
+            </a>
+            <a href="#">
+                <img src="PS/img/banner10.png">
+            </a>
+            <a href="#">
+                <img src="PS/img/banner11.png">
+            </a>
+            <a href="#">
+                <img src="PS/img/banner12.png">
+            </a>
+            <a href="#">
+                <img src="PS/img/banner13.png">
+            </a>
+            <div class="column">
+                <div class="title">
+                    <span>
+                    </span>
+                    <div class="m_title">
+                        <h1>
+                            <a href="#">
+                                航海纪
+                            </a>
+                        </h1>
+                        <p>
+                            被无限的蔚蓝包围着，广阔的大海与蓝天让我们彼此间的距离更近了，此刻相交的心，即便 彼此的一个眼神,也能了解对方的心意。
+                        </p>
+                    </div>
+                </div>
+                <div class="title">
+                    <span>
+                    </span>
+                    <div class="m_title">
+                        <h1>
+                            <a href="#">
+                                拾光纪
+                            </a>
+                        </h1>
+                        <p>
+                            最浪漫的的事就是穿上婚纱，骑着骏马，和你奔驰在广阔无垠的大草原上 ，夕阳西下中我俩许下相守一生的承诺。
+                        </p>
+                    </div>
+                </div>
+                <div class="title">
+                    <span>
+                    </span>
+                    <div class="m_title">
+                        <h1>
+                            <a href="#">
+                                初恋纪
+                            </a>
+                        </h1>
+                        <p>
+                            时光荏苒，改变了很多东西，再次和你手牵手， 走在当初和你一起走过的小路上，原来想和你在一起的初衷从未变过。
+                        </p>
+                    </div>
+                </div>
+                <div class="title">
+                    <span>
+                    </span>
+                    <div class="m_title">
+                        <h1>
+                            <a href="#">
+                                年华纪
+                            </a>
+                        </h1>
+                        <p>
+                            能在对的时间遇上对的人， 对我而言，是一件多么幸运的事情，此间漫步，心中一片风光绮丽，如这烂漫春花一般。
+                        </p>
+                    </div>
+                </div>
+                <div class="title">
+                    <span>
+                    </span>
+                    <div class="m_title">
+                        <h1>
+                            <a href="#">
+                                初恋纪02
+                            </a>
+                        </h1>
+                        <p>
+                            时光荏苒，改变了很多东西，再次和你手牵手， 走在当初和你一起走过的小路上，原来想和你在一起的初衷从未变过。
+                        </p>
+                    </div>
+                </div>
+                <div class="title">
+                    <span>
+                    </span>
+                    <div class="m_title">
+                        <h1>
+                            <a href="#">
+                                初恋纪03
+                            </a>
+                        </h1>
+                        <p>
+                            时光荏苒，改变了很多东西，再次和你手牵手， 走在当初和你一起走过的小路上，原来想和你在一起的初衷从未变过。
+                        </p>
+                    </div>
+                </div>
+                <div class="title">
+                    <span>
+                    </span>
+                    <div class="m_title">
+                        <h1>
+                            <a href="#">
+                                初恋纪04
+                            </a>
+                        </h1>
+                        <p>
+                            时光荏苒，改变了很多东西，再次和你手牵手， 走在当初和你一起走过的小路上，原来想和你在一起的初衷从未变过。
+                        </p>
+                    </div>
+                </div>
+                <div class="title">
+                    <span>
+                    </span>
+                    <div class="m_title">
+                        <h1>
+                            <a href="#">
+                                初恋纪05
+                            </a>
+                        </h1>
+                        <p>
+                            时光荏苒，改变了很多东西，再次和你手牵手， 走在当初和你一起走过的小路上，原来想和你在一起的初衷从未变过。
+                        </p>
+                    </div>
+                </div>
+                <div class="title">
+                    <span>
+                    </span>
+                    <div class="m_title">
+                        <h1>
+                            <a href="#">
+                                初恋纪06
+                            </a>
+                        </h1>
+                        <p>
+                            时光荏苒，改变了很多东西，再次和你手牵手， 走在当初和你一起走过的小路上，原来想和你在一起的初衷从未变过。
+                        </p>
+                    </div>
+                </div>
+                <div class="clearfix">
+                </div>
+                <span class="jt01">
+                </span>
+                <span class="jt02">
+                </span>
+            </div>
+        </div>
+        <script>
+            $(".jt02").click(function() {
+                $(".title:last").after($(".title:first"));
+            });
+
+            $(".jt01").click(function() {
+                $(".title:first").before($(".title:last"));
+            });
+        </script>
+        <script>
+            $(".popular img").hide().eq(0).show();
+
+            $(".title:eq(0)").mouseenter(function() {
+                $(".popular img").hide().eq(0).show()
+            }); 
+			$(".title:eq(1)").mouseenter(function() {
+                $(".popular img").hide().eq(1).show()
+            });
+			$(".title:eq(2)").mouseenter(function() {
+                $(".popular img").hide().eq(2).show()
+            });
+			$(".title:eq(3)").mouseenter(function() {
+                $(".popular img").hide().eq(3).show()
+            });
+			$(".title:eq(4)").mouseenter(function() {
+                $(".popular img").hide().eq(4).show()
+            });
+			$(".title:eq(5)").mouseenter(function() {
+                $(".popular img").hide().eq(5).show()
+            });
+			$(".title:eq(6)").mouseenter(function() {
+                $(".popular img").hide().eq(6).show()
+            });
+			$(".title:eq(7)").mouseenter(function() {
+                $(".popular img").hide().eq(7).show()
+            });
+			$(".title:eq(8)").mouseenter(function() {
+                $(".popular img").hide().eq(8).show()
+            });
+        </script>
+        <div class="news">
+            <img src="PS/img/bt04.png">
+            <div class="n_news">
+                <div class="m_news">
+                    <a href="#">
+                        <img src="PS/img/xw01.png">
+                    </a>
+                </div>
+                <div class="s_news">
+                    <a href="#">
+                        <img src="PS/img/xw02.png">
+                    </a>
+                    <a href="#">
+                        <img src="PS/img/xw03.png">
+                    </a>
+                </div>
+            </div>
+            <div class="clearfix">
+            </div>
+            <a href="#" class="btn03">
+                <img src="PS/img/ckt05.png">
+                <img src="PS/img/ckt06.png">
+            </a>
+        </div>
+        <script>
+            $(".btn03 img:eq(1)").hide();
+			$(".btn03").mouseenter(function() {
+                $(".btn03 img:eq(1)").show()
+
+            }).mouseleave(function() {
+                $(".btn03 img:eq(1)").hide()
+
+            });
+        </script>
+        <div class="footer">
+            <div class="subnav">
+                <div class="col">
+                    <ul>
+                        <li>
+                            <a href="#" class="col01">
+                                品牌介绍
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                公司简介
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                发展历程
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                团队风采
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                视频中心
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li>
+                            <a href="#" class="col01">
+                                品牌介绍
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                公司简介
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                发展历程
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                团队风采
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                视频中心
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li>
+                            <a href="#" class="col01">
+                                品牌介绍
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                公司简介
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                发展历程
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                团队风采
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                视频中心
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li>
+                            <a href="#" class="col01">
+                                品牌介绍
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                公司简介
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                发展历程
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                团队风采
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                视频中心
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li>
+                            <a href="#" class="col01">
+                                品牌介绍
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                公司简介
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                发展历程
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                团队风采
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                视频中心
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li>
+                            <a href="#" class="col01">
+                                品牌介绍
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                公司简介
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                发展历程
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                团队风采
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                视频中心
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="m_footer">
+                    <img src="PS/img/wx01.png">
+                    <h1>
+                        全国统一客服电话
+                    </h1>
+                    <h2>
+                        400-8090-886
+                    </h2>
+                </div>
+                <div class="s_subnav">
+                    Copyright ?2015 Meilishuo.com 电信与信息服务业务经营许可证100798号 经营性网站备案信息 京ICP备11031139号
+                    京公网安备110108006045
+                    <br>
+                    客服邮箱：kf@meilishuo.com 客服电话：400-8090-886 文明办网文明上网举报电话：010-82615762 违法不良信息举报中心我最喜爱的人民警察评选>>
+                    反诈骗信息
+                </div>
+                <div class="clearfix">
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

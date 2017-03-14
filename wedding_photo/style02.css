@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+/*广告*/
+.banner_box{overflow:hidden;} 
+ .banner_box img{ position:relative;left:50%;margin-left:-700px;}
+
+/*案例*/
+.product{ margin:0 auto; margin-top:90px;}
+.m_product{ max-width:1000px; margin:0 auto;}
+.s_product{ width:100%; margin:0 auto;}
+.sidebar01{ width:25%; float:left; box-sizing:border-box; padding-right:30px;}
+.sidebar02{ width:75%; float:right; box-sizing:border-box; padding-left:25px;}
+
+.sid01 h1{ font-size:18px; line-height:60px; color:white; background-color:#f16a96;
+             border-bottom:2px solid white;padding-left:24px;}
+
+.tb01{ background:url(PS/img/img01/sjx02.png) no-repeat center left 10px;}
+.tb01:hover{ cursor:pointer;}
+
+.sid02 h2{ font-size:18px; line-height:60px; color:white; background-color:#cc3d6d;
+             border-bottom:2px solid white; padding-left:20px;}
+.sid02 h1{ font-size:14px; padding-left:20px; line-height:60px; color:#666;
+           background-color:#fafafa;}
+.sub li{ border-bottom:2px solid #cc3d6d; line-height:60px; padding-left:20px;}
+.sub a{ color:gray; background:url(PS/img/img01/xbz02.png) no-repeat center left; padding-left:12px;}
+
+.sub li:hover{ background-color:#f2f2f2; font-weight:bold; cursor:pointer;}
+.sub li:hover a{ color:#f16a96; background:url(PS/img/img01/xbz01.png) no-repeat center left; padding-left:12px; }          
+
+.hideul{display:none;}
+.tb02{ background:url(PS/img/img01/sjx01.png) no-repeat center left 10px; font-size:18px; line-height:60px; color:white; background-color:#f16a96; border-bottom:2px solid white;padding-left:24px;}
+
+.text img{ width:100%;}
+.mode{ width:100%; margin-top:10px;}
+.m_mode{ width:33.3%; float:left; position:relative;}
+.m_mode img{ width:100%; box-sizing:border-box; padding:10px 10px;}
+.scroll{ width:66%; margin:0 auto; margin-top:60px}
+.scroll li{ float:left; background-color:#f2f2f2; border-right:2px solid white;}
+.scroll a{ font-size:14px; line-height:60px; padding:0 26px; color:#888;}
+
+.red_box{ position:absolute; left:0; top:0; display:none;}
+.red{ position:absolute; left:0; top:0; left:60px; top:120px;}
+.red img{ width:100%;}
+.red h1{ font-size:14px; color:white; margin-top:78px; margin-left:-35px;}
+.m_mode:hover .red_box{ display:block;}
+.scroll li:hover{ background-color:#f16a96;}
+.scroll li:hover a{ color:white;}
+
+
+
+

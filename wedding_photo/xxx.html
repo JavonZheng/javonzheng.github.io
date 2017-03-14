@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+	<head>
+		<script src="jquery.js"></script>
+		<meta charset="utf-8">
+		<title>无标题文档</title>
+	</head>
+
+	<body>
+		<script> 
+			function mouseMove(ev) { 
+				Ev= ev || window.event; 
+					var mousePos = mouseCoords(ev); 
+					document.getElementById("xxx").value = mousePos.x; 
+					document.getElementById("yyy").value = mousePos.y; 
+				} 
+				function mouseCoords(ev) { 
+					if(ev.pageX || ev.pageY){ 
+					return {x:ev.pageX, y:ev.pageY}; 
+				} 
+				return{ 
+					x:ev.clientX + document.body.scrollLeft - document.body.clientLeft, 
+					y:ev.clientY + document.body.scrollTop - document.body.clientTop 
+				}; 
+			} 
+			document.onmousemove = mouseMove; 
+		</script> 
+		鼠标X轴: 
+		<input id=xxx type=text> 
+		鼠标Y轴: 
+		<input id=yyy type=text>
+	</body>
+</html>

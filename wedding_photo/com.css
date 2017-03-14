@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+/*公用*/
+*{ margin:0; padding:0; font-family:"微软雅黑"; font-size:12px; text-decoration:none; 
+    list-style:none;}
+
+body{ margin:0; background:url(PS/img/bj.png);}
+img{ display:block;}
+h1,h2,h3{ font-weight:normal;}
+.clearfix{ clear:both;}
+dd,dl{ padding:0; margin:0;}
+/*页头*/
+.header{ margin:0 auto;}
+.logo{ width:263px; height:89px; display:block; margin:0 auto; padding:40px 0 30px 0;}
+.content{
+  background-image: -moz-linear-gradient( -90deg, rgb(228,100,147) 0%, rgb(198,67,112) 47%, rgb(167,33,77) 100%);
+  background-image: -webkit-linear-gradient( -90deg, rgb(228,100,147) 0%, rgb(198,67,112) 47%, rgb(167,33,77) 100%);
+  background-image: -ms-linear-gradient( -90deg, rgb(228,100,147) 0%, rgb(198,67,112) 47%, rgb(167,33,77) 100%);box-shadow: 0px 3px 7.2px 0.8px rgba(6, 0, 1, 0.2); margin:0 auto;}
+ .nav{ max-width: 1000px; margin:0 auto;}
+  .nav li{ float:left; padding:0 24px; line-height:40px;}
+  .nav a{ color:#fff;}
+  .nav li:hover{  background-image: -moz-linear-gradient( -90deg, rgb(192,60,102) 0%, rgb(210,80,124) 47%, rgb(227,99,146) 100%);
+  background-image: -webkit-linear-gradient( -90deg, rgb(192,60,102) 0%, rgb(210,80,124) 47%, rgb(227,99,146) 100%);
+  background-image: -ms-linear-gradient( -90deg, rgb(192,60,102) 0%, rgb(210,80,124) 47%, rgb(227,99,146) 100%);
+  box-shadow: inset -1px 0px 3px 0px rgba(6, 0, 1, 0.25);
+}
+/*页尾*/
+.footer{ background:url(PS/img/yj01.png) no-repeat center; margin-top:120px; padding-top:60px;}
+.subnav{ max-width:1000px; margin:0 auto; padding-bottom:50px; position:relative;}
+
+.subnav a{ color:#e3e5e5; line-height:24px;}
+.col{ width:14%; float:left;}
+.col01{ font-size:16px;}
+.m_footer{ width:14%; float:right;}
+.m_footer img{ width:70%; margin:0 auto; margin-bottom:20px;}
+.m_footer h1{ color:#e3e5e5; text-align:center;}
+.m_footer h2{ color:#e3e5e5; font-size:18px;text-align:center;}
+.s_subnav{ position:absolute; color:#e3e5e5; top:180px;}
