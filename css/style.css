@@ -356,9 +356,11 @@ p {
 .mrgTop {
     margin-top: 30px;
 }
-.form-control{background: #009fe6;padding: 20px 15px;border-color: #9adfff;border-radius: 0;color: #fff;}
+
+/*#009fe6*/
+.form-control{background: #5e5e5e ;padding: 20px 15px;border-color: #797979;border-radius: 0;color: #fff;}
 .btn-primary {
-    color: #03a9f4;
+    color: #888;/*#03a9f4*/
     background-color: #ffffff;
     border-color: #ffffff;
     padding: 10px 34px;
@@ -1253,11 +1255,11 @@ border: 1px solid #CE1139;
 ---------------------------------*/
 
 .footer_wrapper {
-    background: #03a9f4;
+    background: #1a1a1a;/*#03a9f4*/
 }
 
 .footer_bottom {
-    border-top: 1px solid #31bfff;
+    border-top: 1px solid #797979;/*#31bfff*/
     padding: 25px 0;
 }
 
