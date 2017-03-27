@@ -4,7 +4,9 @@
     <head>
         <link href="com.css" rel="stylesheet">
         <link href="style01.css" rel="stylesheet">
+		<link href="css/wedding_index.css" rel="stylesheet">
         <script src="jquery.js"></script>
+		<script src="js/wedding_index.js"></script>
         <meta charset="utf-8">
         <title>不凡诗意  首页</title>
     </head>
@@ -47,58 +49,31 @@
                 </div>
             </div>
         </div>
-        <div class="banner_box">
-            <a href="#">
-                <img src="PS/img/banner02.png">
-            </a>
-            <a href="#">
-                <img src="PS/img/banner04.png">
-            </a>
-            <a href="#">
-                <img src="PS/img/banner05.png">
-            </a>
-            <ul class="btns">
-                <li class="current"></li>
-                <li></li>
-                <li></li>
-            </ul>
+		<div class="slider-bgimg"></div>
+        <div class="slider clearfix">
+            <ul class="slider-main clearfix">
+			  <li class="slider-panel">
+			    <a href="#"><img src="PS/img/banner02.png"></a>
+			  </li>
+			  <li class="slider-panel">
+			    <a href="#"><img src="PS/img/banner04.png"></a>
+			  </li>
+			  <li class="slider-panel">
+			    <a href="#"><img src="PS/img/banner05.png"></a>
+			  </li>
+			</ul>
+            <div class="slider-extra">
+			  <ul class="slider-nav">
+                  <li class="slider-item"></li>
+                  <li class="slider-item"></li>
+                  <li class="slider-item"></li>
+              </ul>
+			</div>
+			<div class="slider-page">
+			  <a class="slider-pre" href="javascript:;;">&lt</a>
+			  <a class="slider-next" href="javascript:;;">&gt</a>
+			</div>
         </div>
-        <script>
-            $(".banner_box a").hide().eq(0).show();
-
-            $(".btns li:eq(0)").click(function() {
-                x = 0;
-
-                $(".btns li").removeClass("current").eq(0).addClass("current") $(".banner_box a").hide().eq(0).show();
-            }); 
-			$(".btns li:eq(1)").click(function() {
-                x = 1
-
-                $(".btns li").removeClass("current").eq(1).addClass("current") $(".banner_box a").hide().eq(1).show()
-            }); 
-			$(".btns li:eq(2)").click(function() {
-                x = 2 document.title = x $(".btns li").removeClass("current").eq(2).addClass("current") $(".banner_box a").hide().eq(2).show()
-            });
-
-            var x = 0;
-            function run() {
-                if (x < 2) {
-                    x = x + 1;
-                } else {
-                    x = 0;
-                };
-
-                $(".banner_box a").hide().eq(x).show();
-				$(".btns li").removeClass("current").eq(x).addClass("current");
-            }
-            var t_ad = setInterval(run, 3000);
-
-            $(".banner_box").mouseenter(function() {
-                clearInterval(t_ad);
-            }).mouseleave(function() {
-                t_ad = setInterval(run, 3000);
-            });
-        </script>
         <div class="hot_box">
             <img src="PS/img/bt01.png">
             <div class="photo_box">
